@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>간단한 AI 감성 분류기</title>
+    <style>
+        body { font-family: '맑은 고딕', sans-serif; text-align: center; margin-top: 50px; }
+        textarea { width: 300px; height: 100px; font-size: 16px; padding: 10px; }
+        button { margin-top: 10px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        .result-box { margin-top: 30px; font-size: 24px; font-weight: bold; color: blue; }
+    </style>
+</head>
+<body>
+
+    <h1>AI 감성 분류기 🔮</h1>
+    <p>아래에 아무 문장이나 적고 분석해보세요!</p>
+
+    <!-- 사용자에게 글을 입력받는 폼 -->
+    <form method="POST">
+        <textarea name="text" placeholder="예시: 오늘 날씨가 정말 좋네요! 기분 최고다."></textarea><br>
+        <button type="submit">AI 분석하기</button>
+    </form>
+
+    <!-- 파이썬에서 보낸 결과(result)가 있으면 보여주기 -->
+    {% if result %}
+        <div class="result-box">
+            {{ result }}
+        </div>
+    {% endif %}
+
+</body>
+</html>

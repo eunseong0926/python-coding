@@ -1,0 +1,79 @@
+body {
+    font-family: -apple-system, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e85a2a;
+}
+
+.result-box {
+    margin-top: 25px;
+}
+
+.result-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.result-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.result-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: #fdf0e9;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.score {
+    color: #ff6b35;
+    font-weight: 600;
+}
